@@ -1,4 +1,5 @@
 <h1>Our Customers</h1>
+<h3>Count: <%= @customer_count %></h3>
 <%= form_tag customers_upload_path, multipart: true do %>
   <%= file_field_tag :leads %>
   <%= submit_tag "Import Leads" %>
